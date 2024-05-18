@@ -1,13 +1,13 @@
 [app]
-
+global_config:
 # (str) Title of your application
-title = demoapp
+title : "FRUITS & VEGETABLES RECOGNITION SYSTEM"
 
 # (str) Package name
-package.name = demoapp
+package.name : fruits_vegetables_recognition_system
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain: org.example
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -107,7 +107,7 @@ fullscreen = 0
 #android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 20
+#android.sdk = 30
 
 # (str) Android NDK version to use
 #android.ndk = 23b
@@ -158,7 +158,7 @@ fullscreen = 0
 #android.service_class_name = org.kivy.android.PythonService
 
 # (str) Android app theme, default is ok for Kivy-based app
-# android.apptheme = "@android:style/Theme.NoTitleBar"
+# android.apptheme = "@android:style/Theme.NoTitleBar.Fullscreen"
 
 # (list) Pattern to whitelist for the whole project
 #android.whitelist =
@@ -283,7 +283,7 @@ fullscreen = 0
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+android.archs : armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
